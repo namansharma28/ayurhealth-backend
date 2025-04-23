@@ -46,7 +46,7 @@ def predict_dosha():
         gender_encoded = 0 if gender == 'male' else 1
         food_encoded = {'veg': 0, 'non-veg': 1, 'vegan': 2}.get(food_pref)
         # # mood_encoded = {'calm': 0, 'neutral': 1, 'anxious': 2}.get(mood, 1)
-        sleep_encoded = {'good': 0, 'average': 1, 'bad': 2}.get(sleep_quality, 1)
+        sleep_encoded = {'good': 0, 'average': 1, 'bad': 2}.get(sleep_quality)
 
         # Symptom encoding (simple version for now)
         # all_symptoms = ['fatigue', 'dry skin', 'acne', 'headache', 'joint pain']  # same as training!
